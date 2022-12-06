@@ -35,7 +35,7 @@ class linear_predictor():
             self.W+=learing_rate*grad
 
         return loss_list
-            
+    
 
     def loss(self,X_batch,Y_batch):
         """
@@ -52,3 +52,8 @@ class linear_predictor():
     def jundgement(self,X,Y):
         loss=np.sqrt(np.sum((np.dot(X,self.W.T)-Y)**2)/X.shape[0])
         return loss
+    
+    
+    
+    
+    
